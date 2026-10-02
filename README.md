@@ -23,6 +23,13 @@ npm run build
 
 Configure `frontend/.env` with `VITE_CONTRACT_ADDRESS`. The UI also permits a reviewer to paste any deployed address and stores it locally. Network is StudioNet, chain ID `61999` (`0xf22f`).
 
+## StudioNet deployment
+
+- Contract: `0xFEE5e0ca9DcbD52E75D4c1f7dE25dF94e475385E`
+- Network: StudioNet (`61999` / `0xf22f`)
+- Frontend: <https://dependency-patch-permit.pages.dev>
+- Explorer: <https://explorer-studio.genlayer.com/address/0xFEE5e0ca9DcbD52E75D4c1f7dE25dF94e475385E>
+
 ## Reviewer flow
 
 1. Connect any StudioNet wallet and register a policy for a public GitHub repository.
