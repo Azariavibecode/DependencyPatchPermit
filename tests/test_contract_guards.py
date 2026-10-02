@@ -26,3 +26,17 @@ def test_failure_verdict_cannot_issue_permit():
     issue = SOURCE.index('if result["verdict"] == "PATCH_VERIFIED"')
     reviewed = SOURCE.index('candidate["state"] = "REVIEWED"', issue)
     assert issue < reviewed
+
+def test_live_runner_covers_adversarial_matrix():
+    runner = (Path(__file__).parents[1] / "scripts" / "run_studionet_e2e.mjs").read_text(encoding="utf-8")
+    for branch in [
+        "failure_lock_incomplete",
+        "conflict_foreign_repository",
+        "failure_invalid_workflow_id",
+        "failure_duplicate_evidence",
+        "failure_mutate_locked_candidate",
+        "failure_wrong_consumer",
+        "failure_wrong_head",
+        "failure_replay_permit",
+    ]:
+        assert branch in runner

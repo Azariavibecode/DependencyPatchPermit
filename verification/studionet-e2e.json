@@ -1,0 +1,187 @@
+{
+  "generated_at": "2026-10-02T01:39:17.485Z",
+  "network": "StudioNet",
+  "chain_id": 61999,
+  "contract": "0xFEE5e0ca9DcbD52E75D4c1f7dE25dF94e475385E",
+  "wallets": [
+    "0x67A1A08Fc4cf7D05c859d0d3D8398a3A30B1677e",
+    "0x7C87B10a3d43F3b3551414401F8b26B9F662bAB5"
+  ],
+  "github": {
+    "base": "4b7da55c1f4e209a34c3435ded931f77f61c5cc1",
+    "head": "1ba86e9f1d23da0044c6beedd1a9444234152f91",
+    "workflow_run_id": "36949687426"
+  },
+  "before": {
+    "candidate_count": 0,
+    "consumed_count": 0,
+    "permit_count": 0,
+    "policy_count": 0
+  },
+  "after": {
+    "candidate_count": 1,
+    "consumed_count": 1,
+    "permit_count": 1,
+    "policy_count": 1
+  },
+  "policy": {
+    "consumer": "0x67a1a08fc4cf7d05c859d0d3d8398a3a30b1677e",
+    "ecosystem": "npm",
+    "lock_path": "/fixtures/e2e/package-lock.json",
+    "manifest_path": "/fixtures/e2e/package.json",
+    "owner": "Azariavibecode",
+    "package": "lodash",
+    "policy_id": 0,
+    "repo": "DependencyPatchPermit",
+    "required_check": "dependency-policy",
+    "revision": 1,
+    "state": "ACTIVE"
+  },
+  "candidate": {
+    "advisory_id": "GHSA-35jh-r3h4-6jhm",
+    "base_commit": "4b7da55c1f4e209a34c3435ded931f77f61c5cc1",
+    "candidate_id": 0,
+    "confidence": "HIGH",
+    "head_commit": "1ba86e9f1d23da0044c6beedd1a9444234152f91",
+    "new_version": "4.17.21",
+    "old_version": "4.17.20",
+    "permit_id": 0,
+    "policy_id": 0,
+    "proposer": "0x7c87b10a3d43f3b3551414401f8b26b9f662bab5",
+    "reason_code": "FIXED_VERSION_CONFIRMED",
+    "state": "PERMIT_ISSUED",
+    "verdict": "PATCH_VERIFIED",
+    "workflow_run_id": "36949687426"
+  },
+  "permit": {
+    "candidate_id": 0,
+    "commitment": "af958779e0f9ac5702f88327db8786ce14871a63c3aab65cf2a6e6b018bde420",
+    "consumed_by": "0x67a1a08fc4cf7d05c859d0d3d8398a3a30b1677e",
+    "consumer": "0x67a1a08fc4cf7d05c859d0d3d8398a3a30b1677e",
+    "head_commit": "1ba86e9f1d23da0044c6beedd1a9444234152f91",
+    "permit_id": 0,
+    "policy_id": 0,
+    "state": "CONSUMED"
+  },
+  "transactions": [
+    {
+      "label": "happy_register_policy",
+      "hash": "0xc9780059234e9bd734d1db09b4822095f05cdb1543718c4679fcc07d5acabbbd",
+      "actor": "0x67A1A08Fc4cf7D05c859d0d3D8398a3A30B1677e",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE"
+    },
+    {
+      "label": "happy_propose_candidate",
+      "hash": "0x19d96c0695d4c401cdf899de7dd68811cfa31bb52ab17f212161d5a26a103f89",
+      "actor": "0x7C87B10a3d43F3b3551414401F8b26B9F662bAB5",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE"
+    },
+    {
+      "label": "failure_lock_incomplete",
+      "hash": "0x447962617d0e87c6f3a2ebf55b7e42d225ed24a7b55576ae4200df41e1e5cc5f",
+      "actor": "0x67A1A08Fc4cf7D05c859d0d3D8398a3A30B1677e",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE"
+    },
+    {
+      "label": "conflict_foreign_repository",
+      "hash": "0x45eb2a9f27936d29416b3b14114034c7b97c122a401f3a8807e95a18b515488a",
+      "actor": "0x7C87B10a3d43F3b3551414401F8b26B9F662bAB5",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE"
+    },
+    {
+      "label": "failure_invalid_workflow_id",
+      "hash": "0x84d7c013490c9528f180541d6e243cee942cab0c19b429e4444a95de6740f95a",
+      "actor": "0x7C87B10a3d43F3b3551414401F8b26B9F662bAB5",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE"
+    },
+    {
+      "label": "happy_bind_base_manifest",
+      "hash": "0x6eb45945636870fb2c4e71aa4e25717d8bf255d22d18bc541c94b25c42f82b01",
+      "actor": "0x7C87B10a3d43F3b3551414401F8b26B9F662bAB5",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE"
+    },
+    {
+      "label": "happy_bind_head_manifest",
+      "hash": "0xaa8fa9234c5f0302befb7d30807ffe5c4a39005881f3e39602761b58ac111bb2",
+      "actor": "0x7C87B10a3d43F3b3551414401F8b26B9F662bAB5",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE"
+    },
+    {
+      "label": "happy_bind_head_lockfile",
+      "hash": "0xf6da3bd5faa0c3963ef634b275b173e0425359f46072bed3f19e5669b9c635b3",
+      "actor": "0x7C87B10a3d43F3b3551414401F8b26B9F662bAB5",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE"
+    },
+    {
+      "label": "failure_duplicate_evidence",
+      "hash": "0xd6aff82e10dec5864ef27be74f8625f43d458ad6646f329535bc8e5b5bf14a09",
+      "actor": "0x67A1A08Fc4cf7D05c859d0d3D8398a3A30B1677e",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE"
+    },
+    {
+      "label": "happy_bind_workflow",
+      "hash": "0x319caa5d2fdc7d9c31201a036157f6b15b4a8470a6f72186396d8a2ec9885a85",
+      "actor": "0x7C87B10a3d43F3b3551414401F8b26B9F662bAB5",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE"
+    },
+    {
+      "label": "happy_lock_candidate",
+      "hash": "0xd71af771365dccbb65f9b805b0482abcba0040908cd4a4983dd06d2e30b3a8ed",
+      "actor": "0x67A1A08Fc4cf7D05c859d0d3D8398a3A30B1677e",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE"
+    },
+    {
+      "label": "failure_mutate_locked_candidate",
+      "hash": "0x939b6fa1e9c63a20d13ae4e381a11fd4a3c18f33ed5bbdf86748e78974eb4984",
+      "actor": "0x7C87B10a3d43F3b3551414401F8b26B9F662bAB5",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE"
+    },
+    {
+      "label": "happy_review_candidate",
+      "hash": "0x7b849c0aa37da9e7b72674cf44d1cb5e19e3463adb8c73520218ceab8f8ffd97",
+      "actor": "0x7C87B10a3d43F3b3551414401F8b26B9F662bAB5",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE"
+    },
+    {
+      "label": "failure_wrong_consumer",
+      "hash": "0x2b4adcfdff6994df9c0049a5fcdf9a083432448687728f3115f23f2cc9b55c64",
+      "actor": "0x7C87B10a3d43F3b3551414401F8b26B9F662bAB5",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE"
+    },
+    {
+      "label": "failure_wrong_head",
+      "hash": "0x81067707dc24e7ec6a943d38566d0c2abac43fe86fe77bad4afcb421fd18f830",
+      "actor": "0x67A1A08Fc4cf7D05c859d0d3D8398a3A30B1677e",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE"
+    },
+    {
+      "label": "happy_consume_permit",
+      "hash": "0x8b564989669bc25c3e9094bc91787c09f93fe5eabe957a82671916ccd590c3ec",
+      "actor": "0x67A1A08Fc4cf7D05c859d0d3D8398a3A30B1677e",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE"
+    },
+    {
+      "label": "failure_replay_permit",
+      "hash": "0x9721ff78ca4855ae6c8b8c6e7c658cccb93adc4f3c201e875e72fb0637739e5c",
+      "actor": "0x67A1A08Fc4cf7D05c859d0d3D8398a3A30B1677e",
+      "status": "FINALIZED",
+      "result_name": "MAJORITY_AGREE"
+    }
+  ]
+}
